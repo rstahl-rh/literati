@@ -1,4 +1,5 @@
 *.nocommit
 *.swp
 *.log
-
+*.pdf
+*.aux

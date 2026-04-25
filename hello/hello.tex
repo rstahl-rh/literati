@@ -1,0 +1,35 @@
+\documentclass{article}
+\begin{document}
+\section*{Overview}
+This is where the fish lives.
+
+\subsection*{Description}
+This is a simple "guess the number" game with a stringy twist. The user will guess an integer 1 - 10. They get multiple guesses. If they guess right, they get a confirmation that this is where the fish lives. If they guess wrong, they are informed that the fish is in another lake.
+
+\subsection*{Prompt}
+Create a guess the number game that runs in a terminal. Use Python as the language for implementation. Select a random number in the range 1 to 10. Prompt the user. If they guess correctly, print "This is where the fish lives." and exit. If they guess correctly, print "I'm sorry, but your fish is in another lake." and prompt them again. Write the script to "fish-locator.py", and make it executable.
+
+\subsection*{Output}
+\begin{verbatim}
+#!/usr/bin/env python3
+
+import random
+
+# Select a random number between 1 and 10
+secret_number = random.randint(1, 10)
+
+while True:
+    try:
+        guess = int(input("Guess a number (1-10): "))
+
+        if guess == secret_number:
+            print("This is where the fish lives.")
+            break
+        else:
+            print("I'm sorry, but your fish is in another lake.")
+    except ValueError:
+        print("Please enter a valid number.")
+\end{verbatim}
+
+
+\end{document}
