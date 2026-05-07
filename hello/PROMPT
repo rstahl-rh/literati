@@ -1,0 +1,6 @@
+1. Read the LaTeX document in the current working directory.
+2. For each section
+	1. Find the "Prompt" subsection.
+	2. Do what is described in the prompt.
+	3. Copy the generated file into the "Output" subsection of a new copy of the LaTeX document, save that as <filename>-populated.tex .
+

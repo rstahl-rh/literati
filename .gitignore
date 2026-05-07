@@ -1,5 +1,9 @@
+# do not commit scratch state
+*.aux
 *.nocommit
-*.swp
 *.log
 *.pdf
-*.aux
+*.py
+*.pyc
+*.swp
+
