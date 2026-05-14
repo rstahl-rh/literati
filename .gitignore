@@ -3,7 +3,6 @@
 *.nocommit
 *.log
 *.pdf
-*.py
 *.pyc
 *.swp
 
