@@ -13,5 +13,26 @@ fish-finder.py
 Create a guess the number game that runs in a terminal. Use Python as the language for implementation. Select a random number in the range 1 to 10. Prompt the user. If they guess correctly, print "This is where the fish lives." and exit. If they guess incorrectly, print "I'm sorry, but your fish is in another lake." and prompt them again.
 
 \subsection*{Output}
+\begin{verbatim}
+import random
+
+def main():
+    target = random.randint(1, 10)
+
+    while True:
+        try:
+            guess = int(input("Guess a number between 1 and 10: "))
+
+            if guess == target:
+                print("This is where the fish lives.")
+                break
+            else:
+                print("I'm sorry, but your fish is in another lake.")
+        except ValueError:
+            print("Please enter a valid number.")
+
+if __name__ == "__main__":
+    main()
+\end{verbatim}
 
 \end{document}
